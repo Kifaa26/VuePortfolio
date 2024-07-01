@@ -1,0 +1,91 @@
+/* Bootstrap icon */ 
+
+/*App*/
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  nav {
+    padding: 30px;
+  }
+  
+  nav a {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  nav a.router-link-exact-active {
+    color: #000000;
+  }
+
+  /* .navbar {
+    position: sticky!important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  } */
+
+/* Universal selector*/
+
+/* Custom variables*/
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Select all images*/
+img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* logo*/
+img[alt='logo']{
+    width: 5rem;
+}
+
+/* wrapper */
+:is(.wrapper){
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
+}
+
+/* background-image */
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.home-image {
+  margin-top: 30px;
+}
+
+.home {
+  text-align: center;
+  margin-top: 20px;
+}
+img {
+  width: 450; 
+  height: 450px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
