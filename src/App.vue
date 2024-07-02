@@ -3,15 +3,14 @@
     <NavBar />
     <main class="container-fluid">
       <section class="row" id="home">
-        <HomeSection/>
+        <HomeSection :home="home"/>
       </section>
-      <section class="row" id="about"></section>
-      <section class="row" id="resume"></section>
-      <section class="row" id="projects"></section>
-      <section class="row" id="testimonials"></section>
-      <section class="row" id="reachMe"></section>
+      <section class="row" id="about">
+        <AboutMeSection :aboutMe="aboutMe" />
+      </section>
+      <!-- Other sections -->
     </main>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -19,22 +18,29 @@
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import HomeSection from '@/components/HomeSection.vue'
+import AboutMeSection from '@/components/AboutSection.vue'
+
 export default {
   computed: {
-    about () {
-      return this.$store.state.aboutMe
+    home() {
+      return this.$store.state.home;
+    },
+    aboutMe() {
+      return this.$store.state.aboutMe;
     }
   },
   components: {
     NavBar,
     Footer,
-    HomeSection
+    HomeSection,
+    AboutMeSection
   },
-  mounted() {
-    this.$store.dispatch('getAboutMe')
+  async mounted() {
+    await this.$store.dispatch('getHome');
+    await this.$store.dispatch('getAboutMe');
   }
-}
+};
 </script>
 
 <style src="./assets/css/style.css">
-</style>
+</style> 
