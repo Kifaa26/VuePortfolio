@@ -1,16 +1,18 @@
 <template>
   <div class="wrapper">
-    <NavBar />
-    <main class="container-fluid">
-      <section class="row" id="home">
+    <NavBar/>
+    <main>
+      <section id="home" class="d-flex justify-content-center">
         <HomeSection :home="home"/>
       </section>
-      <section class="row" id="about">
-        <AboutMeSection :aboutMe="aboutMe" />
+      <section id="about pt-5">
+        <div class="container pt-5">
+          <AboutMeSection :aboutMe="aboutMe" />
+        </div>
       </section>
       <!-- Other sections -->
     </main>
-    <Footer />
+    <Footer/>
   </div>
 </template>
 
@@ -18,15 +20,15 @@
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import HomeSection from '@/components/HomeSection.vue'
-import AboutMeSection from '@/components/AboutSection.vue'
+import AboutMeSection from '@/components/AboutMeSection.vue'
 
 export default {
   computed: {
     home() {
-      return this.$store.state.home;
+      return this.$store.state.home
     },
     aboutMe() {
-      return this.$store.state.aboutMe;
+      return this.$store.state.aboutMe
     }
   },
   components: {
@@ -36,10 +38,12 @@ export default {
     AboutMeSection
   },
   async mounted() {
-    await this.$store.dispatch('getHome');
-    await this.$store.dispatch('getAboutMe');
-  }
-};
+    await this.$store.dispatch('getHome')
+    await this.$store.dispatch('getAboutMe')
+  }, catch (error) {
+      console.error('Error fetching data:', error)
+    }
+}
 </script>
 
 <style src="./assets/css/style.css">
