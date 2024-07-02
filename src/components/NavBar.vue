@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/"
           ><img
-            src="https://github.com/Kifaa26/images/blob/main/images/AP%20Logo.png?raw=true"
+            src="https://github.com/Kifaa26/images/blob/main/images/81.jpg?raw=true"
             alt="logo"
             class="img-fluid"
             loading="lazy"

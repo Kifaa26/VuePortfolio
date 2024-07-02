@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2'
-const portfolioURL = '//https://kifaa26.github.io/Info/data/'
+const portfolioURL = 'https://kifaa26.github.io/Info/data/'
 export default createStore({
   state: {
     home: null,
@@ -42,6 +42,7 @@ export default createStore({
       try {
       let {home} = (await axios.get(portfolioURL)).data
       context.commit("setHome", home)
+      console.log(home);
     } catch (e) {
       Swal.fire ({
         title: "Error",
