@@ -5,7 +5,7 @@ const portfolioURL = 'https://kifaa26.github.io/Info/data/'
 export default createStore({
   state: {
     home: null,
-    about: null,
+    aboutMe: null,
     education: null,
     experiences: null,
     skills: null,

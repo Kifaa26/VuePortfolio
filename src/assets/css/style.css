@@ -1,4 +1,15 @@
 /* Bootstrap icon */ 
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+section {
+  min-height: 100vh;
+}
+
+
 
 /*App*/
 #app {
@@ -11,6 +22,7 @@
   
   nav {
     padding: 30px;
+    width: 100vw !important;
   }
   
   nav a {
@@ -56,36 +68,59 @@ img[alt='logo']{
     grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
-/* background-image */
-.background-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+
+
+/* home */
+
+.home-section {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 50%;
+  min-height: 50%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  color: white;
+  align-items: center;
+  height: 100%;
+  color: #fff; /* Adjust text color */
 }
 
-.content {
+.text-container {
+  text-align: center;
+  max-width: 600px;
   padding: 20px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  border-radius: 8px;
 }
 
-.home-image {
-  margin-top: 30px;
+.static-title {
+  font-size: 2rem; /* Adjust font size as needed */
 }
 
-.home {
-  text-align: center;
+.dynamic-title {
+  font-size: 3rem; /* Adjust font size as needed */
   margin-top: 20px;
 }
-img {
-  width: 450; 
-  height: 450px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-}
 
+.profile-image {
+  width: 200px; /* Adjust image size */
+  border-radius: 50%;
+  margin-top: 20px;
+}
