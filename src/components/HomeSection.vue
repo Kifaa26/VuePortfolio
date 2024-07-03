@@ -1,5 +1,5 @@
 <template>
-  <div class="home-section">
+  <div class="container">
     <video autoplay muted loop class="background-video">
       <source src="https://videos.pexels.com/video-files/10746717/10746717-hd_1920_1080_25fps.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -14,10 +14,9 @@
             </div>
             <div class="col">
               <div class="text-container">
-                <h1 class="static-title">Aakifah Palekar</h1>
-                <h1 class="dynamic-title">{{ home.title }}</h1>
-                <h2>{{ home.subtitle }}</h2>
-                <p>{{ home.description }}</p>
+                <h1 >Aakifah Palekar</h1>
+                <h2 >{{ home.title }}</h2>
+                <h3>{{ home.subtitle }}</h3>
               </div>
 
             </div>
@@ -35,11 +34,13 @@ import Spinner from '@/components/Spinner.vue';
 export default {
   name: "HomeSection",
 
-  props: {
-    home: {
-      type: Object,
-      required: true
+  computed: {
+    home() {
+      return this.$store.state.home
     }
+  },
+   mounted() {
+    this.$store.dispatch('getHome')
   },
 
   components: {

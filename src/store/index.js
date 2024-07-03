@@ -7,7 +7,7 @@ export default createStore({
     home: null,
     aboutMe: null,
     education: null,
-    experiences: null,
+    experience: null,
     skills: null,
     testimonials: null,
     projects: null
@@ -24,8 +24,8 @@ export default createStore({
     setEducation(state, value) {
       state.education = value
     },
-    setExperiences(state, value) {
-      state.experiences = value
+    setExperience(state, value) {
+      state.experience = value
     },
     setSkills(state, value) {
       state.skills = value
@@ -69,6 +69,7 @@ export default createStore({
       try {
       let {education} = (await axios.get(portfolioURL)).data
       context.commit("setEducation", education)
+      console.log(education);
     } catch (e) {
       Swal.fire ({
         title: "Error",
@@ -78,10 +79,11 @@ export default createStore({
       })
     }
     },
-    async getExperiences(context) {
+    async getExperience(context) {
       try {
-      let {experiences} = (await axios.get(portfolioURL)).data
-      context.commit("setExperiences", experiences)
+      let {experience} = (await axios.get(portfolioURL)).data
+      context.commit("setExperience", experience)
+      console.log(experience);
     } catch (e) {
       Swal.fire ({
         title: "Error",

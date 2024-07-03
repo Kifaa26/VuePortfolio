@@ -1,27 +1,31 @@
 <template>
   <div class="container">
-    <section class="row" id="home">
-
-    </section>
-    <section class="row" id="about">
-
-    </section>
-    <section class="row" id="resume">
-
-    </section>
-    <section class="row" id="projects">
-      
-    </section>
-    <section class="row" id="testimonials">
-
-    </section>
-    <section class="row" id="reachMe">
-
-    </section>
+      <section id="home" class="d-flex justify-content-center">
+        <HomeSection/>
+      </section>
+      <section id="aboutMe">
+        <AboutMeSection/>
+      </section>
+      <section id="resume">
+        <ResumeSection/>
+      </section>
     
   </div>
 </template>
 
 <script>
+import HomeSection from '@/components/HomeSection.vue'
+import AboutMeSection from '@/components/AboutMeSection.vue'
+import ResumeSection from '@/components/ResumeSection.vue'
 
+export default {
+  components: {
+    HomeSection,
+    AboutMeSection,
+    ResumeSection
+  }
+}
 </script>
+
+<style>
+</style>
