@@ -19,6 +19,7 @@
     "sweetalert2": "^11.12.1",
     "vscode": "^1.1.37",
     "vue": "^3.2.13",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },
