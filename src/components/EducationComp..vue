@@ -2,6 +2,7 @@
   <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
+            <div class="timeline">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -19,6 +20,7 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
     </div>
@@ -40,14 +42,14 @@ export default {
 
 <style scoped>
 
-/* Flip card container */
+
 .flip-card {
-  perspective: 1000px; /* Add perspective for the 3D effect */
-  margin-bottom: 20px; /* Adjust spacing between flip cards */
+  perspective: 1000px; 
+  margin-bottom: 20px; 
   height: 300px;
 }
 
-/* Inner container for the flip card */
+
 .flip-card-inner {
   width: 100%;
   height: 100%;
@@ -55,7 +57,7 @@ export default {
   transform-style: preserve-3d;
 }
 
-/* Front side of the flip card */
+
 .flip-card-front,
 .flip-card-back {
   width: 100%;
@@ -63,36 +65,42 @@ export default {
   backface-visibility: hidden;
 }
 
-/* Style for the front side */
+
 .flip-card-front {
   position: absolute;
-  background-color: #ebbb4b9f; /* Front side background color */
-  padding: 30px; /* Padding for front side content */
+  background-color: #bc863a4f; 
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Style for the back side */
+
 .flip-card-back {
   transform: rotateY(180deg);
   position: absolute;
-  background-color: #8c8c8c0f; /* Back side background color */
-  padding: 30px; /* Padding for back side content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for back side */
+  background-color: #8c8c8c0f; 
+  padding: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* On hover, flip the card */
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Heading style */
+
 .flip-card h3 {
-  margin-bottom: 10px; /* Adjust spacing between heading and content */
-  color: #ffffff; /* Heading color */
+  margin-bottom: 10px; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 5px #000000;
 }
 
-/* Content style */
+
 .flip-card p {
-  color: #fdfdfd; /* Text color */
+  color: #fdfdfd; 
+  text-shadow: 2px 2px 5px #000000;
 }
+
 
 </style>
