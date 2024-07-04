@@ -2,16 +2,15 @@
   <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-            <div class="timeline">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <h3>Education</h3>
+                  <h3>Hover to see my Education</h3>
                 </div>
                 <div class="flip-card-back">
-                
-                  <h3>Education</h3>
 
+                  <h3>Education</h3>
+                  <br>
                   <div class="info" v-for="i in education" :key="i.school">
                     <h5>{{i.school}}</h5>
                     <p>{{i.degree}}</p>
@@ -20,7 +19,6 @@
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
     </div>
@@ -55,6 +53,7 @@ export default {
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  border-radius: 10px;
 }
 
 
@@ -63,6 +62,8 @@ export default {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 
@@ -101,6 +102,9 @@ export default {
   color: #fdfdfd; 
   text-shadow: 2px 2px 5px #000000;
 }
+
+
+
 
 
 </style>

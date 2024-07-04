@@ -47,11 +47,3 @@
     </div>
   </nav>
 </template>
-
-<router-link class="navbar-brand" to="/"
-        ><img
-          src="https://github.com/Kifaa26/images/blob/main/images/81.jpg?raw=true"
-          alt="logo"
-          class="img-fluid"
-          loading="lazy"
-      /></router-link>
