@@ -5,12 +5,12 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <h3>Work Experience</h3>
+                    <h3>Hover to see my Work Experience</h3>
                   </div>
                   <div class="flip-card-back">
                   
                     <h3>Work Experience</h3>
-  
+                    <br>
                     <div class="info" v-if="experience">
                       <h5>{{experience.company}}</h5>
                       <p>{{experience.position}}</p>
@@ -53,6 +53,7 @@
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    border-radius: 10px;
   }
   
  
@@ -62,6 +63,7 @@
     height: 100%;
     backface-visibility: hidden;
     margin: 0 auto;
+    border-radius: 10px;
   }
   
   
@@ -100,5 +102,5 @@
     color: #fdfdfd; 
     text-shadow: 2px 2px 5px #000000;
   }
-  
+
   </style>
