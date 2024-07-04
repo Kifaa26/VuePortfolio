@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-    <div class="container-fluid">
+    <div class="container">
       <router-link class="navbar-brand" to="/"
         ><img
           src="https://github.com/Kifaa26/images/blob/main/images/81.jpg?raw=true"
@@ -40,10 +40,11 @@
             <a class="nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reachMe">Reach Me</a>
+            <a class="nav-link" href="#contactMe">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
+

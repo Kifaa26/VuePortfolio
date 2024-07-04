@@ -66,7 +66,7 @@ export default {
 /* Style for the front side */
 .flip-card-front {
   position: absolute;
-  background-color: #0a0530; /* Front side background color */
+  background-color: #ebbb4b9f; /* Front side background color */
   padding: 30px; /* Padding for front side content */
 }
 
@@ -74,7 +74,7 @@ export default {
 .flip-card-back {
   transform: rotateY(180deg);
   position: absolute;
-  background-color: #126f8b; /* Back side background color */
+  background-color: #8c8c8c0f; /* Back side background color */
   padding: 30px; /* Padding for back side content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for back side */
 }

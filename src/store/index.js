@@ -8,7 +8,8 @@ export default createStore({
     aboutMe: null,
     education: null,
     experience: null,
-    skills: null,
+    softSkills: null,
+    technicalSkills: null,
     testimonials: null,
     projects: null
   },
@@ -27,8 +28,11 @@ export default createStore({
     setExperience(state, value) {
       state.experience = value
     },
-    setSkills(state, value) {
-      state.skills = value
+    setSoftSkills(state, value) {
+      state.softSkills = value
+    },
+    setTechnicalSkills(state, value) {
+      state.technicalSkills = value
     },
     setTestimonials(state, value) {
       state.testimonials = value
@@ -108,8 +112,8 @@ export default createStore({
     },
     async getTechnicalSkills(context) {
       try {
-      let {technicalskills} = (await axios.get(portfolioURL)).data
-      context.commit("setTechnicalSkills", technicalskills)
+      let {technicalSkills} = (await axios.get(portfolioURL)).data
+      context.commit("setTechnicalSkills", technicalSkills)
     } catch (e) {
       Swal.fire ({
         title: "Error",
@@ -121,8 +125,8 @@ export default createStore({
     },
     async getProjects(context) {
       try {
-      let {Projects} = (await axios.get(portfolioURL)).data
-      context.commit("setprojects ", Projects)
+      let {projects} = (await axios.get(portfolioURL)).data
+      context.commit("setProjects", projects)
     } catch (e) {
       Swal.fire ({
         title: "Error",
