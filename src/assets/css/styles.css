@@ -36,12 +36,12 @@ section {
     color: #000000;
   }
 
-  /* .navbar {
+  .navbar {
     position: sticky!important;
     top: 0;
     width: 100%;
     z-index: 1000;
-  } */
+  }
 
 /* Universal selector*/
 
