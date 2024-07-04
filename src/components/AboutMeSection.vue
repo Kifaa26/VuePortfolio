@@ -4,10 +4,11 @@
       <h2>{{ aboutMe.title }}</h2>
       <br>
       <div class="fun-block">
-      <p>{{ aboutMe.description }}</p>
+        <p>{{ aboutMe.description }}</p>
+        <a href="https://github.com/Kifaa26/cv.git" target="_blank" class="btn btn-primary mt-3">My Resume</a>
+      </div>
     </div>
-    </div>
-    <Spinner v-else /> 
+    <Spinner v-else />
   </div>
 </template>
 
@@ -53,6 +54,16 @@ export default {
   font-size: 18px;
   line-height: 1.6;
   color: #ffffff; 
+}
+
+.btn-primary {
+  background-color: #0e0d0d; 
+  color: #ffffff; 
+  border: none; 
+}
+
+.btn-primary:hover {
+  background-color: #dfdede48; 
 }
 
 </style>
