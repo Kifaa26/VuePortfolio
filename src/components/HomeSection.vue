@@ -2,7 +2,6 @@
   <div class="container">
     <video autoplay muted loop class="background-video">
       <source src="https://videos.pexels.com/video-files/10746717/10746717-hd_1920_1080_25fps.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
     <div class="home-content">
       <template v-if="home">

@@ -26,12 +26,16 @@
   export default {
     name: "SkillsSection",
     computed: {
-        skills() {
-            return this.$store.state.skills
+        softSkills() {
+            return this.$store.state.softSkills
+        },
+        technicalSkills() {
+            return this.$store.state.technicalSkills
         }
     },
     mounted() {
-        this.$store.dispatch('getSkills')
+        this.$store.dispatch('getSoftSkills'),
+        this.$store.dispatch('getTechnicalSkills')
     }
   };
   </script>

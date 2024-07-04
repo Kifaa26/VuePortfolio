@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3>Resume</h3>
     <Education/>
     <Experiences/>
   </div>
