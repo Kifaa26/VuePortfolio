@@ -25,7 +25,7 @@
             <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#aboutMe">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#resume">Resume</a>
@@ -48,3 +48,10 @@
   </nav>
 </template>
 
+<router-link class="navbar-brand" to="/"
+        ><img
+          src="https://github.com/Kifaa26/images/blob/main/images/81.jpg?raw=true"
+          alt="logo"
+          class="img-fluid"
+          loading="lazy"
+      /></router-link>
