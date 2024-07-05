@@ -41,10 +41,12 @@ section {
     z-index: 1000;
   }
 
-/* Universal selector*/
-
-/* Custom variables*/
-
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
 
 ::-webkit-scrollbar{
     display: none;

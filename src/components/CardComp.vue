@@ -27,6 +27,10 @@ export default {
   padding: 20px;
 }
 
+.card-author {
+  text-align: inherit;
+}
+
 @media (max-width: 720px) {
   .card-body {
     padding: 15px;

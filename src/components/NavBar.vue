@@ -50,5 +50,4 @@
 </template>
 
 <script scoped>
-
 </script>

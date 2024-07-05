@@ -103,13 +103,13 @@ export default {
   text-shadow: 2px 2px 5px #000000;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .col-md-6 {
     width: 60%; 
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
   .col-md-6 {
     width: 100%; 
   }
