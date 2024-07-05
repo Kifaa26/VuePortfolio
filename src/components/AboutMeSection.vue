@@ -44,7 +44,7 @@ export default {
 }
 
 .fun-block {
-  background-color: #bc863a4f; 
+  background-color: #bc863ac8; 
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;

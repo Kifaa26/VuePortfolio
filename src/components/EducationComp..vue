@@ -80,7 +80,7 @@ export default {
 .flip-card-back {
   transform: rotateY(180deg);
   position: absolute;
-  background-color: #8c8c8c0f; 
+  background-color: #ceac3bdc; 
   padding: 30px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

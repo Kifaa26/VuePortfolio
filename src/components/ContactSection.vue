@@ -91,7 +91,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  background-color: #bc863a4f; 
+  background-color: #bc863ac8; 
   border-radius: 10px 10%;
   text-shadow: 2px 2px 5px #000000;
 }

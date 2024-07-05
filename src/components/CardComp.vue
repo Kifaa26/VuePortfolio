@@ -20,7 +20,7 @@ export default {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.87);
   margin-bottom: 10px;
-  background-color: #bc863a4f;
+  background-color: #bc863ac8;
 }
 
 .card-body {

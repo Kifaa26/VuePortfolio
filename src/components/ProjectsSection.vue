@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .card {
   margin-bottom: 20px;
-  background-color: #bc863a4f;
+  background-color: #bc863ac8;
   height: 95%;
 }
 
