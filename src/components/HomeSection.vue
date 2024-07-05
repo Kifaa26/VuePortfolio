@@ -166,7 +166,7 @@ export default {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
   }
 }
 .type {
@@ -223,6 +223,25 @@ export default {
   
   .write {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .profile-image {
+    width: 250px;
+    margin-top: -80px;
+  }
+  
+  .text-container {
+    padding: 10px;
+  }
+  
+  .type {
+    font-size: 1.5rem;
+  }
+  
+  .write {
+    font-size: 1.5rem;
   }
 }
 

@@ -67,4 +67,22 @@ export default {
   width: 100%;
   height: 95%;
 }
+
+@media (max-width: 1200px) {
+  .testimonials {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonials {
+    width: 50%; 
+  }
+}
+
+@media (max-width: 720px) {
+  .testimonials {
+    width: 100%; 
+  }
+}
 </style>

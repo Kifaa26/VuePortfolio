@@ -25,6 +25,7 @@ section {
   nav {
     padding: 30px;
     width: 100vw !important;
+    height: 80px;
   }
   
   nav a {
@@ -68,7 +69,9 @@ img[alt='logo']{
 :is(.wrapper){
     display: grid;
     grid-template-rows: auto minmax(100dvh, 100%) auto;
-}
+} 
+
+
 
 
 
