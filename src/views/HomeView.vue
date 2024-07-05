@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <section id="home" class="d-flex justify-content-center">
+      <section id="home" >
         <HomeSection/>
       </section>
       <section id="aboutMe">
@@ -18,6 +18,9 @@
       <section id="testimonials">
         <TestimonialsSection/>
       </section>
+      <section id="contactMe">
+        <ContactSection/>
+      </section>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ import ResumeSection from '@/components/ResumeSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import TestimonialsSection from '@/components/TestimonialsSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
 
 export default {
   components: {
@@ -36,7 +40,8 @@ export default {
     ResumeSection,
     SkillsSection,
     ProjectsSection,
-    TestimonialsSection
+    TestimonialsSection,
+    ContactSection
   }
 }
 </script>
