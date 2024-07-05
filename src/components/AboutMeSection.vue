@@ -66,4 +66,34 @@ export default {
   background-color: #dfdede48; 
 }
 
+@media (max-width: 720px) {
+  .text-container {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .fun-block {
+    padding: 15px;
+  }
+  
+  .fun-block p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  .text-container {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .fun-block {
+    padding: 10px;
+  }
+  
+  .fun-block p {
+    font-size: 14px;
+  }
+}
+
 </style>

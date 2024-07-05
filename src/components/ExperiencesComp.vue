@@ -103,4 +103,17 @@
     text-shadow: 2px 2px 5px #000000;
   }
 
+  @media (max-width: 1000px) {
+  .col-md-6 {
+    width: 60%; 
+  }
+}
+
+@media (max-width: 720px) {
+  .col-md-6 {
+    width: 100%; 
+  }
+}
+
+
   </style>

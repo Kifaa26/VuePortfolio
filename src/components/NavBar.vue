@@ -48,3 +48,7 @@
     </div>
   </nav>
 </template>
+
+<script scoped>
+
+</script>

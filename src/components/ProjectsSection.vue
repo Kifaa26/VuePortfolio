@@ -79,4 +79,18 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-</style>
+
+@media (max-width: 1000px) {
+  .col-md-4 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  .col-md-4 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+}
+</style> 

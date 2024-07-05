@@ -27,4 +27,15 @@ export default {
   padding: 20px;
 }
 
+@media (max-width: 720px) {
+  .card-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  .card-body {
+    padding: 10px;
+  }
+}
 </style>
