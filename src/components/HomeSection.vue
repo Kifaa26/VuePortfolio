@@ -212,9 +212,10 @@ export default {
   font-size: 1.5rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .profile-image {
     width: 300px;
+    margin-top: -80px;
   }
   
   .type {
@@ -226,23 +227,38 @@ export default {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .profile-image {
     width: 250px;
-    margin-top: -80px;
+    margin-top: -70px;
+  }
+  
+  .text-container {
+    padding: 15px;
+  }
+  
+  .type {
+    font-size: 1.5rem;
+  }
+  
+  .write {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile-image {
+    width: 200px;
+    margin-top: -50px;
   }
   
   .text-container {
     padding: 10px;
   }
   
-  .type {
-    font-size: 1.5rem;
-  }
-  
+  .type,
   .write {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
-
 </style>

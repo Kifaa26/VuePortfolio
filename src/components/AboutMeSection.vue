@@ -66,9 +66,9 @@ export default {
   background-color: #dfdede48; 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .text-container {
-    padding: 10px;
+    padding: 15px;
     font-size: 18px;
   }
   
@@ -81,9 +81,9 @@ export default {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .text-container {
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
   }
   
@@ -93,6 +93,21 @@ export default {
   
   .fun-block p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-container {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .fun-block {
+    padding: 8px;
+  }
+  
+  .fun-block p {
+    font-size: 12px;
   }
 }
 

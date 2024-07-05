@@ -31,15 +31,21 @@ export default {
   text-align: inherit;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .card-body {
     padding: 15px;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .card-body {
     padding: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-body {
+    padding: 8px;
   }
 }
 </style>
