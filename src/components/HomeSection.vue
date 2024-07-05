@@ -200,7 +200,7 @@ export default {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
   }
 }
 .write {
@@ -211,4 +211,19 @@ export default {
   animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
   font-size: 1.5rem;
 }
+
+@media (max-width: 720px) {
+  .profile-image {
+    width: 300px;
+  }
+  
+  .type {
+    font-size: 2rem;
+  }
+  
+  .write {
+    font-size: 2rem;
+  }
+}
+
 </style>
