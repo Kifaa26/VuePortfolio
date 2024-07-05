@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>Projects</h2>
-    <div class="row">
+    <div class="row pt-5 pb-5">
       <div class="col-md-4" v-for="(project, index) in projects" :key="index">
         <div class="card">
           <img v-bind:src="project.image" class="card-img-top" alt="Project Image">
@@ -45,7 +45,7 @@ export default {
 .card {
   margin-bottom: 20px;
   background-color: #bc863a4f;
-  
+  height: 95%;
 }
 
 .card-img-top {
@@ -72,5 +72,11 @@ export default {
 
 .btn:hover {
   box-shadow: 0 4px 8px rgba(255, 254, 254, 0.3); 
+}
+
+.row {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

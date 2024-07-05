@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h2>Testimonials</h2>
+    <h2 class="pt-5 pb-5">Testimonials</h2>
     <div class="row">
-      <div class="col-md-6 col-lg-4" v-for="(testimonial, index) in testimonials" :key="index">
+      <div class="testimonials" v-for="(testimonial, index) in testimonials" :key="index">
         <Card class="testimonial-card">
           <template v-slot:image>
             <img :src="testimonial.image" alt="Testimonial Author" class="card-img-top">
@@ -46,7 +46,11 @@ export default {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center
+}
+
+.testimonials {
+  width: 30%;
 }
 
 .card-text {
@@ -60,6 +64,7 @@ export default {
 }
 
 .testimonial-card {
-  height: 95%; 
+  width: 100%;
+  height: 95%;
 }
 </style>

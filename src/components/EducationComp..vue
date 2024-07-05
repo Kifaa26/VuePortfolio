@@ -69,7 +69,7 @@ export default {
 
 .flip-card-front {
   position: absolute;
-  background-color: #bc863a4f; 
+  background-color: #bc863af3; 
   padding: 30px;
   display: flex;
   align-items: center;

@@ -1,32 +1,34 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div>
-          <h2>Technical Skills</h2>
-          <transition-group name="slide">
-            <div v-for="(skill, index) in technicalSkills" :key="index" class="skill-item">
-              <i class="fas fa-code skill-icon"></i>
-              <span>{{ skill.name }}</span>
+    <div class="row pt-5 pb-5">
+      <div class="col">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+          <div class="col-md-6 pt-4 d-flex justify-content-center align-items-center" v-for="(skill, index) in softSkills" :key="'soft-' + index">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">{{ skill.name }}</h5>
+                <br>
+                <p class="card-text">Soft Skill</p>
+              </div>
             </div>
-          </transition-group>
-        </div>
-      </div>
+          </div>
 
-      <div class="col-md-6">
-        <div>
-          <h2>Soft Skills</h2>
-          <transition-group name="slide">
-            <div v-for="(skill, index) in softSkills" :key="index" class="skill-item">
-              <i class="fas fa-handshake skill-icon"></i>
-              <span>{{ skill.name }}</span>
+          <div class="col-md-6 pt-4 d-flex justify-content-center align-items-center" v-for="(skill, index) in technicalSkills" :key="'tech-' + index">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h5 class="card-title">{{ skill.name }}</h5>
+                <br>
+                <p class="card-text">Technical Skill</p>
+              </div>
             </div>
-          </transition-group>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -47,23 +49,21 @@ export default {
 </script>
 
 <style scoped>
-.slide-enter-active, .slide-leave-active {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+.skill-card {
+  width: 50%;
+  height: 90px; 
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(232, 172, 52);
+  background-color: rgba(57, 47, 49, 0.764);
 }
 
-.slide-enter, .slide-leave-to {
-  transform: translateX(100%);
-  opacity: 0;
+.card-body {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px #000000;
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
+
 </style>
