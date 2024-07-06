@@ -5,7 +5,7 @@
       <br>
       <div class="fun-block">
         <p>{{ aboutMe.description }}</p>
-        <a href="https://github.com/Kifaa26/cv.git" target="_blank" class="btn btn-primary mt-3">My Resume</a>
+        <a href="https://pdf.ac/3LXURX" target="_blank" class="btn btn-primary mt-3">My Resume</a>
       </div>
     </div>
     <Spinner v-else />

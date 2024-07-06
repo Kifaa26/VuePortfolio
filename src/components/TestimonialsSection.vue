@@ -11,7 +11,7 @@
             <blockquote class="card-text">{{ testimonial.quote }}</blockquote>
           </template>
           <template v-slot:author>
-            <h4 class="card-author">{{ testimonial.name }}</h4>
+            <h4 class="card-author custom-center">{{ testimonial.name }}</h4>
           </template>
         </Card>
       </div>
@@ -61,6 +61,9 @@ export default {
 .card-author {
   color: #ffff;
   text-shadow: 2px 2px 5px #000000;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .testimonial-card {
